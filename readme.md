@@ -40,8 +40,18 @@ This is a Task Management API built with Express.js and Mongoose. It provides en
     npm install
 
 3. **setup environment variables**
-rename .env file and set environment variables.
+rename example.env to .env and set environment variables.
 
+    ```
+    PORT=5000
+    PORT=5000
+    MONGO_URI="mongodb://127.0.0.1:27017/task-manager-db"
+    JWT_SECRET="admin@123"
+    TWILIO_ACCOUNT_SID="YOUR TWILIO ACC SID"
+    TWILIO_AUTH_TOKEN="YOUR TWILIO AUTH TOKEN"
+    TWILIO_PHONE_NUMBER="TWILIO PHONE NUMBER"
+    EMAIL_USER="YOUR EMAIL ADDRESS"
+    EMAIL_PASS="PASS KEY"  //(e.g hayd mrvw fjsb xqpq) get it from google by setting an unique app password
 
 4. **start the server**
     ```
