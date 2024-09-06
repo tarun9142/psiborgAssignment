@@ -13,7 +13,7 @@ router.get('/getprofile',passport.authenticate("jwt", { session: false }),genera
 router.post('/logout',passport.authenticate("jwt", { session: false }),generalRateLimiter,logoutUser);
 router.post('/createTeam',passport.authenticate("jwt", { session: false }), checkRole(['Admin', 'Manager']),generalRateLimiter, createTeam);
 router.post('/addMember',passport.authenticate("jwt", { session: false }), checkRole(['Admin','Manager']),generalRateLimiter, addMemberToTeam);
-router.get('/getAllMembers',passport.authenticate("jwt", { session: false }), checkRole(['Admin','Manager']),generalRateLimiter,getTeamMembers)
+router.get('/getAllMembers',passport.authenticate("jwt", { session: false }), checkRole(['Admin','Manager']),generalRateLimiter,getTeamMembers);
 router.put('/updatePreference',passport.authenticate("jwt", { session: false }),generalRateLimiter,updateNotificationPreferences);
 
 
